@@ -1,0 +1,36 @@
+/* Box-sizing fix! */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Utility classes */
+.responsive-img {
+  max-width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+
+h1{
+  font-family: 'Lemonada', cursive;
+  display: flex;
+  justify-content: center;
+}
+
+/*_______________________ RESPONSIVE _______________________*/
+/*__________________________________________________________*/
+
+
+
+
+/* Grid system! */
+.row {
+    max-width: 2500px; /* used to be 1000 !!! */
+    margin: 0 auto;
+    display: flex; /* This will allow our row to display columns horizontally */
+    align-items: flex-start;
+    flex-wrap: wrap; /* This will become necessary to allow our flex boxes to stack in responsive mode */
+}
